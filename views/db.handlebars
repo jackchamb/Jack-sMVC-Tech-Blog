@@ -1,0 +1,19 @@
+{{#if posts.length}}
+<section>
+    <h2>Posts</h2>
+    <ol class="postsLists">
+        {{#each posts as |post|}}
+        <li>
+            {{dashBoard post}}
+        </li> 
+        {{/each}}
+    </ol>
+</section>
+{{else}}
+<section>
+    <h3>You have no posts! 
+        Post something now!
+    </h3>
+</section>
+{{/if}}
+<button type='submit'><a href ='/dashBoard/new'>Add a New post!</button>
