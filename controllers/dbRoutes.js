@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const AuthController = require('../controllers/authController');
+const AuthController = require('../utils/authController');
 const { User, Post, Comment } = require('../models');
 //grab all posts
 router.get('/', AuthController, (req, res) => {
