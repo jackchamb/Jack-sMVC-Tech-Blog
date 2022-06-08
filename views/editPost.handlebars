@@ -1,0 +1,21 @@
+<article
+<h2>
+    Edit a Post
+</h2>
+<form class=" editPostForm">
+    <div>
+        <input name=" postTitle" type="text" value="{{postTitle}}" placeholder="Title"/>
+    </div>
+    <div>
+        This post was made on{{formatDate post.CreatedAt}}  {{post.comment.length}} {{pluralize post.comment.length "comment" "comments"}}
+    </div>
+    <div>
+        <label for="postContent">Content</label>
+        <textarea name="postContent" id="postContent" {{post.postContent}}</textarea>
+    </div>
+    <div>
+        <button type="submit">Save</button>
+        <button type="button" class="deletePost">Delete</button>
+</form>
+</article>
+<script src=""
